@@ -14,4 +14,3 @@ export class ProductsPage {
         this.burgerMenu = page.locator(".bm-burger-button");
     }
 }
-module.exports = { ProductsPage };

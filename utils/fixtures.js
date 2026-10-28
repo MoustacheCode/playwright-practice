@@ -17,11 +17,8 @@ export const customtest = base.extend({
             .getByPlaceholder("Password")
             .fill(process.env.STANDARD_PASSWORD);
         await page.locator("[value='Login']").click();
-        await page.waitForLoadState("networkidle");
         await use(page);
 
         await page.close();
     },
 });
-
-module.exports = { customtest };

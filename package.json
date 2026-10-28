@@ -1,26 +1,5 @@
 {
-  "name": "playwright-practice",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MoustacheCode/playwright-practice.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/MoustacheCode/playwright-practice/issues"
-  },
-  "homepage": "https://github.com/MoustacheCode/playwright-practice#readme",
   "devDependencies": {
-    "@playwright/test": "^1.64.1",
-    "@types/node": "^26.6.5"
-  },
-  "dependencies": {
-    "dotenv": "^18.0.9"
+    "@playwright/test": "^1.64.1"
   }
 }

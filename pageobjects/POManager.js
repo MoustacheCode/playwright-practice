@@ -1,7 +1,7 @@
-const { LoginPage } = require("./LoginPage");
-const { ProductsPage } = require("./ProductsPage");
+import { LoginPage } from "./LoginPage";
+import { ProductsPage } from "./ProductsPage";
 
-class POManager {
+export class POManager {
     constructor(page) {
         this.page = page;
         this.loginPage = new LoginPage(page);
@@ -16,4 +16,3 @@ class POManager {
         return this.productsPage;
     }
 }
-module.exports = { POManager };
