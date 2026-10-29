@@ -9,8 +9,13 @@ export class ProductsPage {
         this.cartBadge = page.locator(".shopping_cart_badge");
         this.removeBackPackButton = page.locator("#remove-sauce-labs-backpack");
         // this.removeBackPackButton = page.locator("button");
-        // this.addToCartButton = page.locator("button");
+        this.addToCartButton = page.getByRole("button", {
+            name: "Add to cart",
+        });
         this.backPackButton = page.locator("#add-to-cart-sauce-labs-backpack");
+        this.bikeLightButton = page.locator(
+            "#add-to-cart-sauce-labs-bike-light",
+        );
         this.burgerMenu = page.locator(".bm-burger-button");
         this.cartBadge = page.locator(".shopping_cart_badge");
     }
