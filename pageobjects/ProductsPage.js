@@ -8,9 +8,17 @@ export class ProductsPage {
         this.sortDropdown = page.locator(".product_sort_container");
         this.cartBadge = page.locator(".shopping_cart_badge");
         this.removeBackPackButton = page.locator("#remove-sauce-labs-backpack");
-        this.removeFromCartButton = page.locator("button");
-        this.addToCartButton = page.locator("button");
+        // this.removeBackPackButton = page.locator("button");
+        // this.addToCartButton = page.locator("button");
         this.backPackButton = page.locator("#add-to-cart-sauce-labs-backpack");
         this.burgerMenu = page.locator(".bm-burger-button");
+        this.cartBadge = page.locator(".shopping_cart_badge");
+    }
+
+    async getCartBadgeCount() {
+        if (!(await this.cartBadge.isVisible())) {
+            return 0;
+        }
+        return Number(await this.cartBadge.innerText());
     }
 }
